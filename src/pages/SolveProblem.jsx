@@ -13,7 +13,7 @@ const SolveProblem = () => {
     useEffect(() => {
         const fetchProblem = async () => {
             try {
-                const response = await fetch(`http://172.168.146.217:5000/api/problems/${problemId}`);
+                const response = await fetch(`https://172.168.146.217:5000/api/problems/${problemId}`);
                 if (!response.ok) throw new Error('Problem not found');
                 const data = await response.json();
                 setProblem(data);
@@ -48,7 +48,7 @@ const SolveProblem = () => {
         }
 
         try {
-            const response = await fetch('http://172.168.146.217:5000/api/submissions', {
+            const response = await fetch('https://172.168.146.217:5000/api/submissions', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

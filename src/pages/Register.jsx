@@ -31,7 +31,7 @@ const Register = () => {
         }
 
         try {
-            const response = await fetch('http://172.168.146.217:5000/api/auth/register', {
+            const response = await fetch('https://172.168.146.217:5000/api/auth/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

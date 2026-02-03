@@ -24,7 +24,7 @@ const Login = () => {
         setError('');
 
         try {
-            const response = await fetch('http://172.168.146.217:5000/api/auth/login', {
+            const response = await fetch('https://172.168.146.217:5000/api/auth/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
