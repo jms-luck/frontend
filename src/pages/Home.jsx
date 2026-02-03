@@ -13,7 +13,7 @@ const ProblemListing = () => {
   useEffect(() => {
     const fetchProblems = async () => {
       try {
-        const response = await fetch('http://172.168.146.217:5000/api/problems');
+        const response = await fetch('https://172.168.146.217:5000/api/problems');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
